@@ -71,9 +71,9 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./my-artifact.zip
-        asset_name: my-artifact.zip
-        asset_content_type: application/zip
+        asset_path: ./hello_world.py
+        asset_name: hello_world.py
+        asset_content_type: application/x-python
 
     - uses: eregon/publish-release@v1
       env:
